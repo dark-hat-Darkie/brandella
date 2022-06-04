@@ -1,0 +1,72 @@
+.ant-menu-horizontal,
+.ant-menu-item::after,
+.ant-menu-submenu::after {
+    border: none !important;
+}
+  
+.menu-wrapper {
+    background: url('../../assets/about-bg.jpg') no-repeat center center/cover;
+}
+
+.menu {
+    background-color: darken($color: rgba(56, 22, 151, 0.0), $amount: 0.9);
+    
+    align-items: center;
+    color: white !important;
+    
+    
+}
+
+.blur {
+    height: 85px;
+    width: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    filter: blur(5px);
+}
+
+.ant-menu-item-selected, .ant-menu-item-active {
+    color: orange;
+    
+    &:focus {
+        color: orange !important;
+    }
+
+    &:active{
+        color: orange !important;
+    }
+
+    &:hover {
+        color: orange !important;
+    }
+}
+
+.menu-item-logo {
+    margin-right: auto;
+}
+
+.hero-section {
+    min-height: 100vh;
+    overflow: hidden;
+
+    h1, p {
+        color: white;
+    }
+
+    .site-title {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .site-subtitle {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .hero-image {
+        width: 60rem;
+        
+    }
+}
